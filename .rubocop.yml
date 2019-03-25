@@ -1,0 +1,11 @@
+inherit_from:
+- https://relaxed.ruby.style/rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'bin/*'
+    - 'config/routes.rb'
+    - 'config/puma.rb'
+    - 'config/environments/*'
+    - 'db/*'

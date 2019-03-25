@@ -1,0 +1,31 @@
+-
+  repeat_handler:
+    commands:
+      -
+        name: Repeat
+        description: "`repeat [sentence]`: Repeats the sentence you wrote"
+        regex: !ruby/regexp '/^repeat (?<sentence>.+)/i'
+        action: repeat
+
+-
+  greetings_and_salutations_handler:
+    commands:
+      -
+        name: Greetings
+        description: "`hi`: Says hi"
+        regex: !ruby/regexp '/^(hi|hello)$/i'
+        action: greetings
+      -
+        name: Salutations
+        description: "`bye`: Says bye"
+        regex: !ruby/regexp '/^(bye)$/i'
+        action: salutations
+
+-
+  coin_flip_handler:
+    commands:
+      -
+        name: Flip a coin
+        description: "`coinflip`: Flips a coin"
+        regex: !ruby/regexp '/^coinflip$/i'
+        action: coin_flip_message

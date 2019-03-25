@@ -1,0 +1,3 @@
+# Slackify Boilerplate
+
+Slack + Rails = ❤
